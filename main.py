@@ -1,4 +1,4 @@
-import os as s 
+import os as s
 again = True
 
 def divide(num = 0, deno = 0):
@@ -20,7 +20,7 @@ def remainder(num = 0, deno = 0):
         return None
     else:
         return int(num) % int(deno)
-
+    
 def summation(lr = 0 , up = 0):
     sum = 0
     print("=======================================")
@@ -30,7 +30,7 @@ def summation(lr = 0 , up = 0):
         for x in range(lr, up+1):
             sum += x
         return sum
-
+    
 def operation(choice):
     print("=======================================")
     if choice == "d":
@@ -51,18 +51,28 @@ def operation(choice):
         print("Remainder: \t\t\t{}".format(remainder(x, y)))
         s.system("pause")
         s.system("cls")
-    else:
-        s.system("cls")
-        print("Invalid choice")
+    elif choice == "f":
+        x = int(input("Enter the First number: \t"))
+        y = int(input("Enter the Second number: \t"))
+        print("Summation: \t\t\t{}".format(summation(x, y)))
         s.system("pause")
         s.system("cls")
+    elif choice == "x":
+        s.system("cls")
+        print("Exiting the program...")
+        again = False
+        exit()
+    else:
+        print("Invalid choice")
 
 while again == True:
-    print("========================================")
+    print("=======================================")
     print("[D.] - Divide")
     print("[E.] - Exponentation")
     print("[R.] - Remainder")
-    print("========================================")
+    print("[F.] - Summation")
+    print("[X.] - Exit")
+    print("=======================================")
     choice = input("Enter your choice: ").lower()
     s.system("pause")
     s.system("cls")
