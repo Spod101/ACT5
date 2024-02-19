@@ -69,13 +69,13 @@ def operation(choice):
         s.system("cls")
 
 while again == True:
-    print("=======================================")
+    print("========================================")
     print("[D.] - Divide")
     print("[E.] - Exponentation")
     print("[R.] - Remainder")
     print("[F.] - Summation")
     print("[X.] - Exit")
-    print("=======================================")
+    print("========================================")
     choice = input("Enter your choice: ").lower()
     s.system("pause")
     s.system("cls")
