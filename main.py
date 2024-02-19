@@ -62,7 +62,6 @@ while again == True:
     print("[D.] - Divide")
     print("[E.] - Exponentation")
     print("[R.] - Remainder")
-
     print("========================================")
     choice = input("Enter your choice: ").lower()
     s.system("pause")
