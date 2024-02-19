@@ -57,6 +57,11 @@ def operation(choice):
         print("Summation: \t\t\t{}".format(summation(x, y)))
         s.system("pause")
         s.system("cls")
+    elif choice == "exit":
+        s.system("cls")
+        print("Exiting the program...")
+        again = False
+        exit()
     else:
         s.system("cls")
         print("Invalid choice")
@@ -69,6 +74,7 @@ while again == True:
     print("[E.] - Exponentation")
     print("[R.] - Remainder")
     print("[F.] - Summation")
+    print("[X.] - Exit")
     print("========================================")
     choice = input("Enter your choice: ").lower()
     s.system("pause")
